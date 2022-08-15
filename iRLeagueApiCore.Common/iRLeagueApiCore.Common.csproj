@@ -17,7 +17,7 @@
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
 		<TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
-		<PackageId>iRLeagueApiCore.Communication</PackageId>
+		<PackageId>iRLeagueApiCore.Common</PackageId>
 		<Version>0.2.0</Version>
 		<Authors>Simon Schulze</Authors>
 		<Company>Simon Schulze</Company>
