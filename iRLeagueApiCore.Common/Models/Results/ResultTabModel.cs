@@ -14,6 +14,7 @@ namespace iRLeagueApiCore.Common.Models
         public long ResultTabId { get; set; }
         [DataMember]
         public long SeasonId { get; set; }
-
+        [DataMember]
+        public long ResultConfigId { get; set; }
     }
 }
