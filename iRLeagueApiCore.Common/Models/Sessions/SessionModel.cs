@@ -21,25 +21,10 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public long LeagueId { get; set; }
         /// <summary>
-        /// Id of the schedule this session belongs to
-        /// </summary>
-        [DataMember]
-        public long? ScheduleId { get; set; }
-        /// <summary>
-        /// If session is subsession provide the id of the parent session here. If not leave at default (null)
-        /// </summary>
-        [DataMember(IsRequired = false)]
-        public long? ParentSessionId { get; set; }
-        /// <summary>
         /// Flag shows if result is available
         /// </summary>
         [DataMember]
         public bool HasResult { get; set; }
-        /// <summary>
-        /// List of subsessions
-        /// </summary>
-        [DataMember]
-        public new IEnumerable<SubSessionModel> SubSessions { get; set; }
 
         #region version
         /// <summary>
