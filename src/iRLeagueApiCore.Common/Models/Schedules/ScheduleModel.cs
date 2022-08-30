@@ -14,7 +14,7 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public long SeasonId { get; set; }
         [DataMember]
-        public IEnumerable<long> SessionIds { get; set; }
+        public IEnumerable<long> EventIds { get; set; }
 
         #region version
         /// <summary>
