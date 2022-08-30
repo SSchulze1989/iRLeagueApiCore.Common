@@ -29,22 +29,5 @@ namespace iRLeagueApiCore.Common.Models
         [JsonConverter(typeof(JsonStringEnumConverter))]
 #endif
         public SessionType SessionType { get; set; }
-        /// <summary>
-        /// Day and time of session start
-        /// </summary>
-        [DataMember]
-        public DateTime? Date { get; set; }
-        /// <summary>
-        /// Track id of the location
-        /// </summary>
-        [DataMember]
-        public long? TrackId { get; set; }
-        /// <summary>
-        /// Total duration of the session including all Subsessions and events
-        /// </summary>
-        [DataMember]
-        public TimeSpan Duration { get; set; }
-        [DataMember]
-        public IEnumerable<PutSessionSubSessionModel> SubSessions { get; set; }
     }
 }

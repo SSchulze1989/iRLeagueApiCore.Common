@@ -7,6 +7,7 @@ namespace iRLeagueApiCore.Common.Models
     /// <summary>
     /// Get a complete scored result from the database
     /// </summary>
+    [DataContract]
     public class ResultModel
     {
         /// <summary>
@@ -33,10 +34,20 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public string ScheduleName { get; set; }
         /// <summary>
+        /// Id of the event the result belongs to
+        /// </summary>
+        [DataMember]
+        public long EventId { get; set; }
+        /// <summary>
+        /// Name of the event the result belongs to
+        /// </summary>
+        [DataMember]
+        public string EventName { get; set; }
+        /// <summary>
         /// Id of the session the result belongs to
         /// </summary>
         [DataMember]
-        public long SessionId { get; set; }
+        public long? SessionId { get; set; }
         /// <summary>
         /// Name of the session the result belongs to
         /// </summary>
@@ -46,7 +57,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Id of the scoring for this result
         /// </summary>
         [DataMember]
-        public long ScoringId { get; set; }
+        public long? ScoringId { get; set; }
         /// <summary>
         /// Name of the scoring for this result
         /// </summary>
