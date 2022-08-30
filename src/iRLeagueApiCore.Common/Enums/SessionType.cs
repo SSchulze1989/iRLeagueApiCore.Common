@@ -31,8 +31,5 @@ namespace iRLeagueApiCore.Common.Enums
         Practice,
         Qualifying,
         Race,
-        HeatEvent,
-        Heat,
-        Warmup
     }
 }
