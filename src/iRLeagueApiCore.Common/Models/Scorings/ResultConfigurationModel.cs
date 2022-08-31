@@ -9,7 +9,5 @@ namespace iRLeagueApiCore.Common.Models
         public long Id { get; set; }
         [DataMember]
         public long LeagueId { get; set; }
-        [DataMember]
-        public long ResultTabId { get; set; }
     }
 }

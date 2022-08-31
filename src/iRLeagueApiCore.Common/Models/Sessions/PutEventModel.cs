@@ -1,7 +1,12 @@
-﻿namespace iRLeagueApiCore.Common.Models
+﻿using System.Collections.Generic;
+
+namespace iRLeagueApiCore.Common.Models
 {
     public class PutEventModel : PostEventModel
     {
-        
+        /// <summary>
+        /// Ids of ResultConfigurations to connect with this event
+        /// </summary>
+        IEnumerable<long> ResultConfigIds { get; set; }
     }
 }
