@@ -16,9 +16,9 @@
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
-		<TargetFrameworks>net5.0;netstandard2.0</TargetFrameworks>
+		<TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
 		<PackageId>iRLeagueApiCore.Common</PackageId>
-		<Version>0.3.1-dev</Version>
+		<Version>0.3.1-dev1</Version>
 		<Authors>Simon Schulze</Authors>
 		<Company>Simon Schulze</Company>
 		<PackageDescription>This package contains shared objects for all members of the iRLeagueDatabase-iRLeagueApi stack</PackageDescription>
