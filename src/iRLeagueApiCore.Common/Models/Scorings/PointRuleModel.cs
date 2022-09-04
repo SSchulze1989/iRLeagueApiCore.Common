@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace iRLeagueApiCore.Common.Models.Scorings
+namespace iRLeagueApiCore.Common.Models
 {
     [DataContract]
     public class PointRuleModel : PutPointRuleModel
