@@ -7,6 +7,6 @@ namespace iRLeagueApiCore.Common.Models
         /// <summary>
         /// Ids of ResultConfigurations to connect with this event
         /// </summary>
-        IEnumerable<long> ResultConfigIds { get; set; }
+        ICollection<long> ResultConfigIds { get; set; }
     }
 }

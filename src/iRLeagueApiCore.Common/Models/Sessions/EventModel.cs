@@ -18,5 +18,7 @@ namespace iRLeagueApiCore.Common.Models
         /// </summary>
         [DataMember]
         public long ScheduleId { get; set; }
+        [DataMember]
+        public bool HasResult { get; set; }
     }
 }

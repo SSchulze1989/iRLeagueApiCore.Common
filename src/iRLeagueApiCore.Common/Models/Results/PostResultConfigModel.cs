@@ -15,6 +15,6 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public string DisplayName { get; set; }
         [DataMember]
-        public IEnumerable<ScoringModel> Scorings { get; set; }
+        public ICollection<ScoringModel> Scorings { get; set; }
     }
 }
