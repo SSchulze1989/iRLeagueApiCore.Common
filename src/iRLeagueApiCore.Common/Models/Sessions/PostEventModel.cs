@@ -1,7 +1,6 @@
 ﻿using iRLeagueApiCore.Common.Enums;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace iRLeagueApiCore.Common.Models
@@ -13,7 +12,7 @@ namespace iRLeagueApiCore.Common.Models
 
         [DataMember]
 #if NETCOREAPP
-        [EnumDataType(typeof(EventType))]
+        [System.ComponentModel.DataAnnotations.EnumDataType(typeof(EventType))]
 #endif
         public EventType EventType { get; set; }
         /// <summary>
