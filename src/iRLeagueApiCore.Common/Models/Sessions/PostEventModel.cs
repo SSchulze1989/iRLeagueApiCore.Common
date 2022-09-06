@@ -1,6 +1,7 @@
 ﻿using iRLeagueApiCore.Common.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
 
 namespace iRLeagueApiCore.Common.Models
@@ -11,6 +12,9 @@ namespace iRLeagueApiCore.Common.Models
         public string Name { get; set; }
 
         [DataMember]
+#if NETCOREAPP
+        [EnumDataType(typeof(EventType))]
+#endif
         public EventType EventType { get; set; }
         /// <summary>
         /// Day and time of session start
