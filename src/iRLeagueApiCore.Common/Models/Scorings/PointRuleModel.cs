@@ -3,11 +3,11 @@
 namespace iRLeagueApiCore.Common.Models
 {
     [DataContract]
-    public class PostResultTabModel
+    public class PointRuleModel : PutPointRuleModel
     {
         [DataMember]
-        public string Name { get; set; }
+        public long LeagueId { get; set; }
         [DataMember]
-        public string Description { get; set; }
+        public long PointRuleId { get; set; }
     }
 }

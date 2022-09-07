@@ -13,10 +13,14 @@ namespace iRLeagueApiCore.Common.Models
         public long Id { get; set; }
         [DataMember]
         public long LeagueId { get; set; }
+        [DataMember]
+        public long SeasonId { get; set; }
         /// <summary>
         /// Id of the schedule this event belongs to
         /// </summary>
         [DataMember]
         public long ScheduleId { get; set; }
+        [DataMember]
+        public bool HasResult { get; set; }
     }
 }

@@ -22,16 +22,9 @@ namespace iRLeagueApiCore.Common.Models
         /// </summary>
         [DataMember]
         public long LeagueId { get; set; }
-        /// <summary>
-        /// Id of the season the scoring belongs to
-        /// </summary>
         [DataMember]
-        public long SeasonId { get; set; }
-        /// <summary>
-        /// Ids of session connected to the scoring
-        /// </summary>
-        [DataMember]
-        public IEnumerable<long> SessionIds { get; set; }
+        public long ResultConfigId { get; set; }
+
         #region version
         /// <summary>
         /// Date of creation

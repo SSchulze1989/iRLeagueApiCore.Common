@@ -11,6 +11,9 @@ namespace iRLeagueApiCore.Common.Models
         public string Name { get; set; }
 
         [DataMember]
+#if NETCOREAPP
+        [System.ComponentModel.DataAnnotations.EnumDataType(typeof(EventType))]
+#endif
         public EventType EventType { get; set; }
         /// <summary>
         /// Day and time of session start
@@ -31,6 +34,6 @@ namespace iRLeagueApiCore.Common.Models
         /// Sessions configured for this event
         /// </summary>
         [DataMember]
-        public IEnumerable<SessionModel> Sessions { get; set; }
+        public ICollection<SessionModel> Sessions { get; set; }
     }
 }
