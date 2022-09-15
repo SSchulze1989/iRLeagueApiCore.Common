@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace iRLeagueApiCore.Common.Models.Results
+namespace iRLeagueApiCore.Common.Models
 {
     public class EventResultModel
     {
