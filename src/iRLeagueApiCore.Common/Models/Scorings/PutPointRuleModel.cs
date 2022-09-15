@@ -3,7 +3,7 @@
 namespace iRLeagueApiCore.Common.Models
 {
     [DataContract]
-    public class PutResultTabModel : PostResultTabModel
+    public class PutPointRuleModel : PostPointRuleModel
     {
     }
 }

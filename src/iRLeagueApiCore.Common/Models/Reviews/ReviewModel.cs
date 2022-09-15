@@ -1,29 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace iRLeagueApiCore.Common.Models
+namespace iRLeagueApiCore.Common.Models.Reviews
 {
-    /// <summary>
-    /// Schema for fetching an existing scoring
-    /// </summary>
-    public class ScoringModel : PutScoringModel, IVersionModel
+    [DataContract]
+    public class ReviewModel : PutReviewModel, IVersionModel
     {
-        /// <summary>
-        /// Id of the scoring
-        /// </summary>
-        [DataMember]
-        public long Id { get; set; }
-        /// <summary>
-        /// Id of the league the scoring belongs to
-        /// </summary>
         [DataMember]
         public long LeagueId { get; set; }
         [DataMember]
-        public long ResultConfigId { get; set; }
+        public long ReviewId { get; set; }
+        [DataMember]
+        public long SeasonId { get; set; }
+        [DataMember]
+        public long EventId { get; set; }
+        [DataMember]
+        public long SessionId { get; set; }
+        [DataMember]
+        public string AuthorUserId { get; set; }
+        [DataMember]
+        public string AuthorName { get; set; }
+        [DataMember]
+        public IEnumerable<ReviewCommentModel> ReviewComments { get; set; }
 
         #region version
         /// <summary>

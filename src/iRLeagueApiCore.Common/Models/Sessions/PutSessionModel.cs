@@ -29,5 +29,10 @@ namespace iRLeagueApiCore.Common.Models
         [JsonConverter(typeof(JsonStringEnumConverter))]
 #endif
         public SessionType SessionType { get; set; }
+        [DataMember]
+        public int Laps { get; set; }
+        [DataMember]
+        public TimeSpan Duration { get; set; }
+         
     }
 }
