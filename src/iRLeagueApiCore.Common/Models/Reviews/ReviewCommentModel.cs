@@ -10,6 +10,8 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         [DataMember]
         public long LeagueId { get; set; }
         [DataMember]
+        public long CommentId { get; set; }
+        [DataMember]
         public long ReviewId { get; set; }
         [DataMember]
         public DateTime? Date { get; set; }
