@@ -16,7 +16,7 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public DateTime? SeasonEnd { get; set; }
         [DataMember]
-        public IEnumerable<long> ScheduleIds { get; set; }
+        public IEnumerable<long> ScheduleIds { get; set; } = Array.Empty<long>();
 
         #region version
         /// <summary>

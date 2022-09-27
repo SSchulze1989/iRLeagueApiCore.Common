@@ -21,6 +21,10 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         [DataMember] 
         public string IncidentNr { get; set; }
         [DataMember]
-        public ICollection<MemberInfoModel> InvolvedMembers { get; set; }
+        public ICollection<MemberInfoModel> InvolvedMembers { get; set; } = new List<MemberInfoModel>();
+        [DataMember]
+        public string ResultText { get; set; }
+        [DataMember]
+        public ICollection<VoteModel> VoteResults { get; set; } = new List<VoteModel>();
     }
 }

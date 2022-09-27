@@ -9,6 +9,6 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         [DataMember]
         public string Text { get; set; }
         [DataMember]
-        public ICollection<CommentVoteModel> Votes { get; set; }
+        public ICollection<VoteModel> Votes { get; set; }
     }
 }
