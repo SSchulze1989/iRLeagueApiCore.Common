@@ -1,4 +1,5 @@
-﻿using System;
+﻿using iRLeagueApiCore.Common.Models.Members;
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
@@ -25,6 +26,8 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         public string AuthorName { get; set; }
         [DataMember]
         public IEnumerable<ReviewCommentModel> ReviewComments { get; set; } = Array.Empty<ReviewCommentModel>();
+        [DataMember]
+        public IEnumerable<MemberInfoModel> Drivers { get; set; } = Array.Empty<MemberInfoModel>();
 
         #region version
         /// <summary>
