@@ -11,6 +11,8 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         [DataMember]
         public long VoteCategoryId { get; set; }
         [DataMember]
+        public string VoteCategoryText { get; set; }
+        [DataMember]
         public string Description { get; set; }
         [DataMember]
         public MemberInfoModel MemberAtFault { get; set; }
