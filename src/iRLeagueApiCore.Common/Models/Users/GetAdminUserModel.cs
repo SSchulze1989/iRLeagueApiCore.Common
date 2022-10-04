@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace iRLeagueApiCore.Common.Models
+namespace iRLeagueApiCore.Common.Models.Users
 {
     public class GetAdminUserModel
     {
