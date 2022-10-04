@@ -34,6 +34,6 @@ namespace iRLeagueApiCore.Common.Models
         /// Sessions configured for this event
         /// </summary>
         [DataMember]
-        public ICollection<SessionModel> Sessions { get; set; }
+        public ICollection<SessionModel> Sessions { get; set; } = new List<SessionModel>();
     }
 }

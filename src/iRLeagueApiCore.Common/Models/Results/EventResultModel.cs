@@ -17,6 +17,6 @@ namespace iRLeagueApiCore.Common.Models
         public DateTime Date { get; set; }
         public long TrackId { get; set; }
         public string TrackName { get; set; }
-        public IEnumerable<ResultModel> SessionResults { get; set; }
+        public IEnumerable<ResultModel> SessionResults { get; set; } = Array.Empty<ResultModel>();
     }
 }

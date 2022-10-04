@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace iRLeagueApiCore.Common.Models
 {
@@ -8,6 +9,6 @@ namespace iRLeagueApiCore.Common.Models
         public string Firsname { get; set; }
         public string Lastname { get; set; }
         public string Email { get; set; }
-        public IEnumerable<string> Roles { get; set; }
+        public IEnumerable<string> Roles { get; set; } = Array.Empty<string>();
     }
 }

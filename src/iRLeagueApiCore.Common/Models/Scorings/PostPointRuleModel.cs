@@ -11,13 +11,13 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public string Name { get; set; }
         [DataMember]
-        public ICollection<int> PointsPerPlace { get; set; }
+        public ICollection<int> PointsPerPlace { get; set; } = new List<int>();
         [DataMember]
-        public IDictionary<string, int> BonusPoints { get; set; }
+        public IDictionary<string, int> BonusPoints { get; set; } = new Dictionary<string, int>();
         [DataMember]
         public int MaxPoints { get; set; }
         public int PointDropOff { get; set; }
-        public ICollection<SortOptions> PointsSortOptions { get; set; }
-        public ICollection<SortOptions> FinalSortOptions { get; set; }
+        public ICollection<SortOptions> PointsSortOptions { get; set; } = new List<SortOptions>();
+        public ICollection<SortOptions> FinalSortOptions { get; set; } = new List<SortOptions>();
     }
 }
