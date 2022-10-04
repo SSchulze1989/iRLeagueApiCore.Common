@@ -21,11 +21,11 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         [DataMember]
         public int SessionNr { get; set; }
         [DataMember]
-        public string SessionName { get; set; }
+        public string SessionName { get; set; } = string.Empty;
         [DataMember]
-        public string AuthorUserId { get; set; }
+        public string AuthorUserId { get; set; } = string.Empty;
         [DataMember]
-        public string AuthorName { get; set; }
+        public string AuthorName { get; set; } = string.Empty;
         [DataMember]
         public IEnumerable<ReviewCommentModel> ReviewComments { get; set; } = Array.Empty<ReviewCommentModel>();
 
@@ -44,22 +44,22 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         /// User id that created the entry
         /// </summary>
         [DataMember]
-        public string CreatedByUserId { get; set; }
+        public string? CreatedByUserId { get; set; }
         /// <summary>
         /// User id that last modified the entry
         /// </summary>
         [DataMember]
-        public string LastModifiedByUserId { get; set; }
+        public string? LastModifiedByUserId { get; set; }
         /// <summary>
         /// User name that created the entry
         /// </summary>
         [DataMember]
-        public string CreatedByUserName { get; set; }
+        public string? CreatedByUserName { get; set; }
         /// <summary>
         /// User name that last modified the entry
         /// </summary>
         [DataMember]
-        public string LastModifiedByUserName { get; set; }
+        public string? LastModifiedByUserName { get; set; }
         #endregion
     }
 }

@@ -22,7 +22,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the season the result belongs to
         /// </summary>
         [DataMember]
-        public string SeasonName { get; set; }
+        public string SeasonName { get; set; } = string.Empty;
         /// <summary>
         /// Id of the schedule the result belongs to
         /// </summary>
@@ -32,7 +32,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the schedule the result belongs to
         /// </summary>
         [DataMember]
-        public string ScheduleName { get; set; }
+        public string ScheduleName { get; set; } = string.Empty;
         /// <summary>
         /// Id of the event the result belongs to
         /// </summary>
@@ -42,7 +42,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the event the result belongs to
         /// </summary>
         [DataMember]
-        public string EventName { get; set; }
+        public string EventName { get; set; } = string.Empty;
         /// <summary>
         /// Id of the session the result belongs to
         /// </summary>
@@ -52,7 +52,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the session the result belongs to
         /// </summary>
         [DataMember]
-        public string SessionName { get; set; }
+        public string SessionName { get; set; } = string.Empty;
         /// <summary>
         /// Id of the scoring for this result
         /// </summary>
@@ -62,7 +62,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the scoring for this result
         /// </summary>
         [DataMember]
-        public string ScoringName { get; set; }
+        public string ScoringName { get; set; } = string.Empty;
         /// <summary>
         /// List of entries 
         /// </summary>

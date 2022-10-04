@@ -11,9 +11,9 @@ namespace iRLeagueApiCore.Common.Models
     public class PostResultConfigModel
     {
         [DataMember]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         [DataMember]
-        public string DisplayName { get; set; }
+        public string DisplayName { get; set; } = string.Empty;
         [DataMember]
         public ICollection<ScoringModel> Scorings { get; set; } = new List<ScoringModel>();
     }

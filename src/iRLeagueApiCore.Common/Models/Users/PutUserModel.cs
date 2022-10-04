@@ -7,10 +7,10 @@ namespace iRLeagueApiCore.Common.Models.Users
     public class PutUserModel
     {
         [DataMember]
-        public string Firstname { get; set; }
+        public string Firstname { get; set; } = string.Empty;
         [DataMember]
-        public string Lastname { get; set; }
+        public string Lastname { get; set; } = string.Empty;
         [DataMember]
-        public string Email { get; set; }
+        public string Email { get; set; } = string.Empty;
     }
 }

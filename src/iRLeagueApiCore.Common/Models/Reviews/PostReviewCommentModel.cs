@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace iRLeagueApiCore.Common.Models.Reviews
@@ -7,8 +8,8 @@ namespace iRLeagueApiCore.Common.Models.Reviews
     public class PostReviewCommentModel
     {
         [DataMember]
-        public string Text { get; set; }
+        public string Text { get; set; } = string.Empty;
         [DataMember]
-        public ICollection<VoteModel> Votes { get; set; }
+        public ICollection<VoteModel> Votes { get; set; } = Array.Empty<VoteModel>();
     }
 }

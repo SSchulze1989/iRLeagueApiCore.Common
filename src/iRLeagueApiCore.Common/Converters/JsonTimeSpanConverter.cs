@@ -22,6 +22,10 @@ namespace iRLeagueApiCore.Common.Converters
             else
             {
                 var timeSpanString = reader.GetString();
+                if (string.IsNullOrWhiteSpace(timeSpanString))
+                {
+                    return TimeSpan.Zero;
+                }
                 return TimeSpan.ParseExact(timeSpanString, @"hh\:mm\:ss\.fffff", null);
             }
         }

@@ -19,21 +19,21 @@ namespace iRLeagueApiCore.Common.Models
         /// User id that created the entry
         /// </summary>
         [DataMember]
-        string CreatedByUserId { get; set; }
+        string? CreatedByUserId { get; set; }
         /// <summary>
         /// User id that last modified the entry
         /// </summary>
         [DataMember]
-        string LastModifiedByUserId { get; set; }
+        string? LastModifiedByUserId { get; set; }
         /// <summary>
         /// User name that created the entry
         /// </summary>
         [DataMember]
-        string CreatedByUserName { get; set; }
+        string? CreatedByUserName { get; set; }
         /// <summary>
         /// User name that last modified the entry
         /// </summary>
         [DataMember]
-        string LastModifiedByUserName { get; set; }
+        string? LastModifiedByUserName { get; set; }
     }
 }

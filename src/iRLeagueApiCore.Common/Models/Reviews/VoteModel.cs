@@ -9,12 +9,12 @@ namespace iRLeagueApiCore.Common.Models.Reviews
         [DataMember]
         public long Id { get; set; }
         [DataMember]
-        public long VoteCategoryId { get; set; }
+        public long? VoteCategoryId { get; set; }
         [DataMember]
-        public string VoteCategoryText { get; set; }
+        public string? VoteCategoryText { get; set; }
         [DataMember]
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
         [DataMember]
-        public MemberInfoModel MemberAtFault { get; set; }
+        public MemberInfoModel? MemberAtFault { get; set; }
     }
 }

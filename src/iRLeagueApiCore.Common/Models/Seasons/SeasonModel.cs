@@ -33,22 +33,22 @@ namespace iRLeagueApiCore.Common.Models
         /// User id that created the entry
         /// </summary>
         [DataMember]
-        public string CreatedByUserId { get; set; }
+        public string? CreatedByUserId { get; set; }
         /// <summary>
         /// User id that last modified the entry
         /// </summary>
         [DataMember]
-        public string LastModifiedByUserId { get; set; }
+        public string? LastModifiedByUserId { get; set; }
         /// <summary>
         /// User name that created the entry
         /// </summary>
         [DataMember]
-        public string CreatedByUserName { get; set; }
+        public string? CreatedByUserName { get; set; }
         /// <summary>
         /// User name that last modified the entry
         /// </summary>
         [DataMember]
-        public string LastModifiedByUserName { get; set; }
+        public string? LastModifiedByUserName { get; set; }
         #endregion
     }
 }

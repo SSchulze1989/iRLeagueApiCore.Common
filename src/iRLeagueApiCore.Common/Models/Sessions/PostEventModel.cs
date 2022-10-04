@@ -8,7 +8,7 @@ namespace iRLeagueApiCore.Common.Models
     [DataContract]
     public class PostEventModel
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [DataMember]
 #if NETCOREAPP
