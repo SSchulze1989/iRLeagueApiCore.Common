@@ -21,6 +21,11 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public string Name { get; set; }
         /// <summary>
+        /// Number that defines order of sessions in event
+        /// </summary>
+        [DataMember]
+        public int SessionNr { get; set; }
+        /// <summary>
         /// Session type specifier - 0 = Undefined, 1 = Practice, 2 = Qualifying, 3 = Race, 4 = HeatEvent, 5 = Heat, 6 = Warmup
         /// </summary>
         [DataMember]

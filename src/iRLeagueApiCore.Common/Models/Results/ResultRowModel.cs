@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace iRLeagueApiCore.Common.Models
@@ -6,20 +7,29 @@ namespace iRLeagueApiCore.Common.Models
     /// <summary>
     /// Get a scored result row from the database
     /// </summary>
+    [DataContract]
     public class ResultRowModel
     {
         /// <summary>
         /// First name of the driver
         /// </summary>
+        [DataMember]
         public string Firstname { get; set; }
         /// <summary>
         /// Last name of the driver
         /// </summary>
+        [DataMember]
         public string Lastname { get; set; }
         /// <summary>
         /// Team name of the drivers team (or team result)
         /// </summary>
+        [DataMember]
         public string TeamName { get; set; }
+        /// <summary>
+        /// Hex code for team color
+        /// </summary>
+        [DataMember]
+        public string TeamColor { get; set; }
         /// <summary>
         /// Posiion at start of race session (equal to qually result when using attached qualifying)
         /// </summary>
@@ -34,7 +44,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Iracing id of the member
         /// </summary>
         [DataMember]
-        public long MemberId { get; set; }
+        public long? MemberId { get; set; }
         /// <summary>
         /// Car number in the session
         /// </summary>
@@ -197,5 +207,7 @@ namespace iRLeagueApiCore.Common.Models
         /// </summary>
         [DataMember]
         public double FinalPositionChange { get; set; }
+        [DataMember]
+        public IEnumerable<ResultRowModel> TeamResultRows { get; set; } = Array.Empty<ResultRowModel>();
     }
 }

@@ -67,7 +67,7 @@ namespace iRLeagueApiCore.Common.Models
         /// List of entries 
         /// </summary>
         [DataMember(IsRequired = true)]
-        public IEnumerable<ResultRowModel> ResultRows { get; set; }
+        public IEnumerable<ResultRowModel> ResultRows { get; set; } = Array.Empty<ResultRowModel>();
 
         #region version
         /// <summary>

@@ -19,7 +19,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Ids of seasons in this league
         /// </summary>
         [DataMember]
-        public IEnumerable<long> SeasonIds { get; set; }
+        public IEnumerable<long> SeasonIds { get; set; } = Array.Empty<long>();
 
         #region version
         /// <summary>
