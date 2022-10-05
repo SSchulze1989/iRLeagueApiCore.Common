@@ -9,7 +9,7 @@ namespace iRLeagueApiCore.Common.Models.Users
     /// Shows all roles the user is in
     /// </summary>
     [DataContract]
-    public class AdminUserModel : LeagueUserModel
+    public class AdminUserModel : PrivateUserModel
     {
         [DataMember]
         public IEnumerable<string> Roles { get; set; } = Array.Empty<string>();
