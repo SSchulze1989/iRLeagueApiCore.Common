@@ -9,6 +9,8 @@ namespace iRLeagueApiCore.Common.Models.Users
     public class UserModel
     {
         [DataMember]
+        public string UserId { get; set; } = string.Empty;
+        [DataMember]
         public string UserName { get; set; } = string.Empty;
         [DataMember]
         public string Firstname { get; set; } = string.Empty;
