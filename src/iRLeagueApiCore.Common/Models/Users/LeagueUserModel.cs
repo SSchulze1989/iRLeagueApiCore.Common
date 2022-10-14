@@ -9,7 +9,7 @@ namespace iRLeagueApiCore.Common.Models.Users
     /// Can either be retreived by an admin or the user itself
     /// </summary>
     [DataContract]
-    public class LeagueUserModel : PrivateUserModel
+    public class LeagueUserModel : UserModel
     {
 
         [DataMember]
