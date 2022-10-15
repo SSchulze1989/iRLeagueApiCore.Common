@@ -23,6 +23,8 @@ namespace iRLeagueApiCore.Common
             this.implicitRoles = implicitRoles.ToArray();
         }
 
+        public static implicit operator string(LeagueRoleValue role) => role.value;
+
         public bool Equals(LeagueRoleValue? other)
         {
             return value.Equals(other?.value, StringComparison.OrdinalIgnoreCase);
@@ -71,6 +73,16 @@ namespace iRLeagueApiCore.Common
         public override int GetHashCode()
         {
             return value.ToLower().GetHashCode();
+        }
+
+        public static bool operator ==(LeagueRoleValue left, LeagueRoleValue right)
+        {
+            return left.Equals(right);
+        }
+
+        public static bool operator !=(LeagueRoleValue left, LeagueRoleValue right)
+        {
+            return !(left == right);
         }
     }
 }
