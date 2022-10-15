@@ -7,13 +7,6 @@ namespace iRLeagueApiCore.Common.Tests
 {
     public class LeagueRolesTests
     {
-        private static IEnumerable<object> GetTestData(object[] parameters)
-        {
-            List<object> data = new List<object>();
-            data.AddRange(parameters);
-            return data;
-        }
-
         [Theory]
         [InlineData("Admin", true, true, true, true)]
         [InlineData("Organizer", false, true, false, true)]
@@ -29,10 +22,10 @@ namespace iRLeagueApiCore.Common.Tests
             var role = LeagueRoles.GetRoleValue(roleName);
             var roles = new[] { role };
 
-            LeagueRoles.CheckRole(LeagueRoles.Admin, roles).Should().Be(admin);
-            LeagueRoles.CheckRole(LeagueRoles.Organizer, roles).Should().Be(organizer);
-            LeagueRoles.CheckRole(LeagueRoles.Steward, roles).Should().Be(steward);
-            LeagueRoles.CheckRole(LeagueRoles.Member, roles).Should().Be(member);
+            LeagueRoles.CheckRole(LeagueRoles.AdminValue, roles).Should().Be(admin);
+            LeagueRoles.CheckRole(LeagueRoles.OrganizerValue, roles).Should().Be(organizer);
+            LeagueRoles.CheckRole(LeagueRoles.StewardValue, roles).Should().Be(steward);
+            LeagueRoles.CheckRole(LeagueRoles.MemberValue, roles).Should().Be(member);
         }
 
         [Theory]
@@ -53,6 +46,15 @@ namespace iRLeagueApiCore.Common.Tests
             {
                 testImplicitOfRoles.Should().Contain(implicitOfRoles);
             }
+        }
+
+        [Fact]
+        public void ShouldConvertImplicitToString()
+        {
+            var role = LeagueRoles.GetRoleValue("Admin");
+            string roleString = role;
+
+            role.Equals(roleString).Should().BeTrue();
         }
     }
 }

@@ -12,32 +12,35 @@ namespace iRLeagueApiCore.Common
         /// Member with restricted read access to public information:
         /// schedules, sessions, results - but not incident reviews
         /// </summary>
-        //public const string Member = "Member";
-        public static LeagueRoleValue Member { get; } = new("Member");
+        public const string Member = "Member";
+        public static LeagueRoleValue MemberValue { get; } = new(Member);
         /// <summary>
         /// Member with read access to reviews and allowed to create and edit own reviews
         /// No write access to schedules, sessions or results
         /// </summary>
-        public static LeagueRoleValue Steward { get; } = new("Steward", new[] { Member });
+        public const string Steward = "Steward";
+        public static LeagueRoleValue StewardValue { get; } = new(Steward, new[] { MemberValue });
         /// <summary>
         /// Organizer of the league
         /// Write privileges but not allowed to delete seasons or assign roles
         /// </summary>
-        public static LeagueRoleValue Organizer { get; } = new("Organizer", new[] { Member });
+        public const string Organizer = "Organizer";
+        public static LeagueRoleValue OrganizerValue { get; } = new(Organizer, new[] { MemberValue });
         /// <summary>
         /// Administrator of the league with full privileges
         /// </summary>
-        public static LeagueRoleValue Admin { get; } = new("Admin", new[] { Organizer, Steward, Member });
+        public const string Admin = "Admin";
+        public static LeagueRoleValue AdminValue { get; } = new(Admin, new[] { OrganizerValue, StewardValue, MemberValue });
 
         /// <summary>
         /// Array of all available league roles
         /// </summary>
         public static LeagueRoleValue[] RolesAvailable { get; } = new[] 
         { 
-            Admin, 
-            Organizer, 
-            Steward, 
-            Member 
+            AdminValue, 
+            OrganizerValue, 
+            StewardValue, 
+            MemberValue 
         };
 
         /// <summary>
