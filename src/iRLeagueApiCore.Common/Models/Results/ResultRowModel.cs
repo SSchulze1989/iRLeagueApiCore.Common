@@ -14,22 +14,22 @@ namespace iRLeagueApiCore.Common.Models
         /// First name of the driver
         /// </summary>
         [DataMember]
-        public string Firstname { get; set; }
+        public string Firstname { get; set; } = string.Empty;
         /// <summary>
         /// Last name of the driver
         /// </summary>
         [DataMember]
-        public string Lastname { get; set; }
+        public string Lastname { get; set; } = string.Empty;
         /// <summary>
         /// Team name of the drivers team (or team result)
         /// </summary>
         [DataMember]
-        public string TeamName { get; set; }
+        public string TeamName { get; set; } = string.Empty;
         /// <summary>
         /// Hex code for team color
         /// </summary>
         [DataMember]
-        public string TeamColor { get; set; }
+        public string TeamColor { get; set; } = string.Empty;
         /// <summary>
         /// Posiion at start of race session (equal to qually result when using attached qualifying)
         /// </summary>
@@ -59,12 +59,12 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the car (e.g: "Skip Barber RT200")
         /// </summary>
         [DataMember]
-        public string Car { get; set; }
+        public string Car { get; set; } = string.Empty;
         /// <summary>
         /// Name of the car class (in multiclass sessions)
         /// </summary>
         [DataMember]
-        public string CarClass { get; set; }
+        public string CarClass { get; set; } = string.Empty;
         /// <summary>
         /// Number of completed laps in the main session (only includes laps from one session type e.g: race)
         /// </summary>
@@ -134,7 +134,7 @@ namespace iRLeagueApiCore.Common.Models
         /// License class of the driver
         /// </summary>
         [DataMember]
-        public string License { get; set; }
+        public string License { get; set; } = string.Empty;
         /// <summary>
         /// Driver safety rating before the event
         /// </summary>

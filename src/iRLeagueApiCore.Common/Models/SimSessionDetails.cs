@@ -23,7 +23,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the iracing season
         /// </summary>
         [DataMember]
-        public string IRSeasonName { get; set; }
+        public string IRSeasonName { get; set; } = string.Empty;
         /// <summary>
         /// Year of the iracing season
         /// </summary>
@@ -53,7 +53,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the iracing session
         /// </summary>
         [DataMember]
-        public string SessionName { get; set; }
+        public string SessionName { get; set; } = string.Empty;
         /// <summary>
         /// Start time of the iracing session (timezone??)
         /// </summary>
@@ -128,12 +128,12 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the selected track (without config)
         /// </summary>
         [DataMember]
-        public string TrackName { get; set; }
+        public string TrackName { get; set; } = string.Empty;
         /// <summary>
         /// Name of the selected track configuration
         /// </summary>
         [DataMember]
-        public string ConfigName { get; set; }
+        public string ConfigName { get; set; } = string.Empty;
         /// <summary>
         /// Category id of the selected track configuration
         /// </summary>
@@ -143,7 +143,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Category name of the selected track configuration
         /// </summary>
         [DataMember]
-        public string Category { get; set; }
+        public string Category { get; set; } = string.Empty;
         /// <summary>
         /// Weather type in the iracing session
         /// </summary>

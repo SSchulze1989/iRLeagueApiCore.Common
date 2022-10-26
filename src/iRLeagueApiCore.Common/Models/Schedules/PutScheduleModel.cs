@@ -6,6 +6,6 @@ namespace iRLeagueApiCore.Common.Models
     public class PutScheduleModel
     {
         [DataMember]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
 }

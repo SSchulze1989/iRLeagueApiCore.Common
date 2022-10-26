@@ -28,7 +28,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the scoring - shown in results
         /// </summary>
         [DataMember]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         /// <summary>
         /// Maximum number of results to use for calculating scorin group (e.g: Team scoring)
         /// </summary>

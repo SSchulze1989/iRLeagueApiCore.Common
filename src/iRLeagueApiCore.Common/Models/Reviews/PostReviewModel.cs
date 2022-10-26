@@ -9,21 +9,21 @@ namespace iRLeagueApiCore.Common.Models.Reviews
     public class PostReviewModel
     {
         [DataMember]
-        public string IncidentKind { get; set; }
+        public string IncidentKind { get; set; } = string.Empty;
         [DataMember]
-        public string FullDescription { get; set; }
+        public string FullDescription { get; set; } = string.Empty;
         [DataMember] 
-        public string OnLap { get; set; }
+        public string OnLap { get; set; } = string.Empty;
         [DataMember]
-        public string Corner { get; set; }
+        public string Corner { get; set; } = string.Empty;
         [DataMember] 
         public TimeSpan TimeStamp { get; set; }
         [DataMember] 
-        public string IncidentNr { get; set; }
+        public string IncidentNr { get; set; } = string.Empty;
         [DataMember]
         public ICollection<MemberInfoModel> InvolvedMembers { get; set; } = new List<MemberInfoModel>();
         [DataMember]
-        public string ResultText { get; set; }
+        public string ResultText { get; set; } = string.Empty;
         [DataMember]
         public ICollection<VoteModel> VoteResults { get; set; } = new List<VoteModel>();
     }
