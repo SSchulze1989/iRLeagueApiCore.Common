@@ -2,11 +2,10 @@
 {
     public enum ConfigType
     {
-        ShortTrack,
-        Speedway,
-        Rallycross,
-        RoadCourse,
-        DirtOval,
-        Unknown
+        Unknown,
+        Road,
+        Oval,
+        DirtRoad,
+        DirtOval
     }
 }
