@@ -7,6 +7,7 @@ namespace iRLeagueApiCore.Common.Models.Standings
     {
         public long StandingId { get; set; }
         public string Name { get; set; } = string.Empty;
+        public bool IsTeamStanding { get; set; }
         public IEnumerable<StandingRowModel> StandingRows { get; set; } = Array.Empty<StandingRowModel>();
     }
 }
