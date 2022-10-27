@@ -6,7 +6,7 @@ namespace iRLeagueApiCore.Common.Models
     public class PutSeasonModel
     {
         [DataMember]
-        public string SeasonName { get; set; }
+        public string SeasonName { get; set; } = string.Empty;
         [DataMember]
         public long? MainScoringId { get; set; }
         [DataMember]

@@ -19,7 +19,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Name of the session
         /// </summary>
         [DataMember]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         /// <summary>
         /// Number that defines order of sessions in event
         /// </summary>

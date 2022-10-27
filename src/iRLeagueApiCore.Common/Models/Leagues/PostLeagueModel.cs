@@ -14,6 +14,6 @@ namespace iRLeagueApiCore.Common.Models
         /// <para/>Cannot contain spaces and only use characters: a-z A-Z 0-1 _ -
         /// </summary>
         [DataMember]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
     }
 }

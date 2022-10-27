@@ -17,6 +17,6 @@ namespace iRLeagueApiCore.Common.Models
         /// Full name of the league can contain any UTF-8 characters
         /// </summary>
         [DataMember]
-        public string NameFull { get; set; }
+        public string NameFull { get; set; } = string.Empty;
     }
 }

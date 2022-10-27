@@ -9,7 +9,7 @@ namespace iRLeagueApiCore.Common.Models
     public class PostPointRuleModel
     {
         [DataMember]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         [DataMember]
         public ICollection<int> PointsPerPlace { get; set; } = new List<int>();
         [DataMember]

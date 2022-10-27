@@ -8,10 +8,10 @@
         /// <summary>
         /// Name of the user to change permission
         /// </summary>
-        public string UserName { get; set; }
+        public string UserName { get; set; } = string.Empty;
         /// <summary>
         /// Name of the role to give/revoke
         /// </summary>
-        public string RoleName { get; set; }
+        public string RoleName { get; set; } = string.Empty;
     }
 }

@@ -22,5 +22,9 @@ namespace iRLeagueApiCore.Common.Models
         public long ScheduleId { get; set; }
         [DataMember]
         public bool HasResult { get; set; }
+        [DataMember]
+        public string TrackName { get; set; } = string.Empty;
+        [DataMember]
+        public string ConfigName { get; set; } = string.Empty;
     }
 }
