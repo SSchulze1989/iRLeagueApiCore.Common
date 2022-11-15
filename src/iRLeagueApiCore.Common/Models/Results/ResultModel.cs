@@ -54,6 +54,11 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public string SessionName { get; set; } = string.Empty;
         /// <summary>
+        /// Number of the session order
+        /// </summary>
+        [DataMember]
+        public int? SessionNr { get; set; }
+        /// <summary>
         /// Id of the scoring for this result
         /// </summary>
         [DataMember]
