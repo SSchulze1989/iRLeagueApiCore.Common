@@ -56,5 +56,15 @@ namespace iRLeagueApiCore.Common.Models
         /// </summary>
         [DataMember]
         public bool ShowResults { get; set; }
+        /// <summary>
+        /// Point rule to determine point for this scoring
+        /// </summary>
+        [DataMember]
+        PointRuleModel? PointRule { get; set; }
+        /// <summary>
+        /// Collection of values to use for the configured filter
+        /// </summary>
+        [DataMember]
+        ICollection<string> FilterValues { get; set; } = Array.Empty<string>();
     }
 }
