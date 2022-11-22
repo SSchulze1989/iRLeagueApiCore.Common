@@ -1,9 +1,6 @@
-﻿using System.Runtime.Serialization;
+﻿namespace iRLeagueApiCore.Common.Models;
 
-namespace iRLeagueApiCore.Common.Models
+[DataContract]
+public class PutPointRuleModel : PostPointRuleModel
 {
-    [DataContract]
-    public class PutPointRuleModel : PostPointRuleModel
-    {
-    }
 }

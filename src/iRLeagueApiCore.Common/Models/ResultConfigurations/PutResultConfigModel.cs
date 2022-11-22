@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace iRLeagueApiCore.Common.Models;
 
-namespace iRLeagueApiCore.Common.Models
+[DataContract]
+public class PutResultConfigModel : PostResultConfigModel
 {
-    [DataContract]
-    public class PutResultConfigModel : PostResultConfigModel
-    {
-    }
 }

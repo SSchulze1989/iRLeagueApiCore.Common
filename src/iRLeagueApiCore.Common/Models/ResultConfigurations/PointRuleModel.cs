@@ -1,13 +1,10 @@
-﻿using System.Runtime.Serialization;
+﻿namespace iRLeagueApiCore.Common.Models;
 
-namespace iRLeagueApiCore.Common.Models
+[DataContract]
+public class PointRuleModel : PutPointRuleModel
 {
-    [DataContract]
-    public class PointRuleModel : PutPointRuleModel
-    {
-        [DataMember]
-        public long LeagueId { get; set; }
-        [DataMember]
-        public long PointRuleId { get; set; }
-    }
+    [DataMember]
+    public long LeagueId { get; set; }
+    [DataMember]
+    public long PointRuleId { get; set; }
 }
