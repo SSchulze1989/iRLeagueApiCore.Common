@@ -1,7 +1,7 @@
 ﻿namespace iRLeagueApiCore.Common.Models;
 
 [DataContract]
-public struct Interval : IComparable, IComparable<Interval>
+public sealed class Interval : IComparable, IComparable<Interval>
 {
     public Interval()
     {
@@ -20,7 +20,7 @@ public struct Interval : IComparable, IComparable<Interval>
     [DataMember]
     public int Laps { get; set; }
 
-    int IComparable<Interval>.CompareTo(Interval other)
+    int IComparable<Interval>.CompareTo(Interval? other)
     {
         return ((IComparable)this).CompareTo(other);
     }
