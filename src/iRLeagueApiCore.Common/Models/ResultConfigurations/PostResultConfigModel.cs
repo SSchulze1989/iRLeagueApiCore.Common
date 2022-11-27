@@ -6,6 +6,8 @@ public class PostResultConfigModel
     [DataMember]
     public string Name { get; set; } = string.Empty;
     [DataMember]
+    public long? SourceResultConfigId { get; set; }
+    [DataMember]
     public string DisplayName { get; set; } = string.Empty;
     [DataMember]
     public ResultKind ResultKind { get; set; }
