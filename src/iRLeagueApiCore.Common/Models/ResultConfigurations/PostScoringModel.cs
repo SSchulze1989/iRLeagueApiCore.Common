@@ -48,6 +48,11 @@ public class PostScoringModel
     [DataMember]
     public bool ShowResults { get; set; }
     /// <summary>
+    /// True to combine result of all other scorings in this config
+    /// </summary>
+    [DataMember]
+    public bool IsCombinedResult { get; set; }
+    /// <summary>
     /// Point rule to determine point for this scoring
     /// </summary>
     [DataMember]

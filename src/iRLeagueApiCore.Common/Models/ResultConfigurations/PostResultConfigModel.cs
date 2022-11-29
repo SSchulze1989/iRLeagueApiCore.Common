@@ -14,7 +14,7 @@ public class PostResultConfigModel
     [DataMember]
     public int ResultsPerTeam { get; set; }
     [DataMember]
-    public ICollection<ScoringModel> Scorings { get; set; } = new List<ScoringModel>();
+    public IList<ScoringModel> Scorings { get; set; } = new List<ScoringModel>();
     [DataMember]
     public ICollection<ResultFilterModel> FiltersForPoints { get; set; } = new List<ResultFilterModel>();
     [DataMember]
