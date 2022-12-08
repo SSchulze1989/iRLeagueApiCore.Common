@@ -99,7 +99,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Interval to the leading driver 
         /// </summary>
         [DataMember]
-        public TimeSpan Interval { get; set; }
+        public Interval Interval { get; set; }
         /// <summary>
         /// Average lap time in the main session
         /// </summary>
