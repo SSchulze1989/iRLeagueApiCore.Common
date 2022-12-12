@@ -81,6 +81,6 @@ namespace iRLeagueApiCore.Common.Models.Standings
         [DataMember]
         public int PositionChange { get; set; }
         [DataMember]
-        public IEnumerable<ResultRowModel> ResultRows { get; set; } = Array.Empty<ResultRowModel>();
+        public IEnumerable<StandingResultRowModel> ResultRows { get; set; } = Array.Empty<StandingResultRowModel>();
     }
 }
