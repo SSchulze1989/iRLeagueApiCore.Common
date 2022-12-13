@@ -2,6 +2,16 @@
 public sealed class StandingResultRowModel
 {
     /// <summary>
+    /// Id of the Event
+    /// </summary>
+    [DataMember]
+    public long EventId { get; set; }
+    /// <summary>
+    /// Date of event
+    /// </summary>
+    [DataMember]
+    public DateTime Date { get; set; }
+    /// <summary>
     /// Posiion at start of race session (equal to qually result when using attached qualifying)
     /// </summary>
     [DataMember]
@@ -60,4 +70,6 @@ public sealed class StandingResultRowModel
     /// </summary>
     [DataMember]
     public int FinalPosition { get; set; }
+    [DataMember]
+    public bool IsScored { get; set; }
 }

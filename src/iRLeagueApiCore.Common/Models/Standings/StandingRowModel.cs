@@ -49,6 +49,10 @@ namespace iRLeagueApiCore.Common.Models.Standings
         [DataMember]
         public int DroppedResultCount { get; set; }
         [DataMember]
+        public int ClubId { get; set; }
+        [DataMember]
+        public string ClubName { get; set; } = string.Empty;
+        [DataMember]
         public int CompletedLaps { get; set; }
         [DataMember]
         public int CompletedLapsChange { get; set; }
@@ -81,6 +85,6 @@ namespace iRLeagueApiCore.Common.Models.Standings
         [DataMember]
         public int PositionChange { get; set; }
         [DataMember]
-        public IEnumerable<StandingResultRowModel> ResultRows { get; set; } = Array.Empty<StandingResultRowModel>();
+        public IEnumerable<StandingResultRowModel?> ResultRows { get; set; } = Array.Empty<StandingResultRowModel>();
     }
 }
