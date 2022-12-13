@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace iRLeagueApiCore.Common.Models;
 
-namespace iRLeagueApiCore.Common.Models
+[DataContract]
+public class PostSeasonModel
 {
-    [DataContract]
-    public class PostSeasonModel : PutSeasonModel
-    {
-    }
+    [DataMember]
+    public string SeasonName { get; set; } = string.Empty;
+    [DataMember]
+    public long? MainScoringId { get; set; }
+    [DataMember]
+    public bool HideComments { get; set; }
+    [DataMember]
+    public bool Finished { get; set; }
 }
