@@ -56,16 +56,6 @@ namespace iRLeagueApiCore.Common.Models
         [DataMember]
         public int ClassId { get; set; }
         /// <summary>
-        /// Id of the iracing member club
-        /// </summary>
-        [DataMember]
-        public int ClubId { get; set; }
-        /// <summary>
-        /// Name of the iracing member club
-        /// </summary>
-        [DataMember]
-        public string ClubName { get; set; } = string.Empty;
-        /// <summary>
         /// Name of the car (e.g: "Skip Barber RT200")
         /// </summary>
         [DataMember]
@@ -109,7 +99,7 @@ namespace iRLeagueApiCore.Common.Models
         /// Interval to the leading driver 
         /// </summary>
         [DataMember]
-        public Interval Interval { get; set; } = new();
+        public Interval Interval { get; set; }
         /// <summary>
         /// Average lap time in the main session
         /// </summary>
