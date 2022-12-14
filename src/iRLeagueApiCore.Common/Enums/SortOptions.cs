@@ -38,5 +38,9 @@ namespace iRLeagueApiCore.Common.Enums
         FastLapDesc,
         QualLapAsc,
         QualLapDesc,
+        TotalPtsWoBonusAsc,
+        TotalPtsWoBonusDesc,
+        TotalPtsWoPenaltyAsc,
+        TotalPtsWoPenaltyDesc,
     }
 }
