@@ -85,6 +85,10 @@ namespace iRLeagueApiCore.Common.Models.Standings
         [DataMember]
         public int PositionChange { get; set; }
         [DataMember]
+        public int StartIrating { get; set; }
+        [DataMember]
+        public int LastIrating { get; set; }
+        [DataMember]
         public IEnumerable<StandingResultRowModel?> ResultRows { get; set; } = Array.Empty<StandingResultRowModel>();
     }
 }
