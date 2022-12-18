@@ -53,6 +53,11 @@ public class PostScoringModel
     [DataMember]
     public bool IsCombinedResult { get; set; }
     /// <summary>
+    /// Use the points from the source configuration (when calculating a combined result)
+    /// </summary>
+    [DataMember]
+    public bool UseSourcePoints { get; set; }
+    /// <summary>
     /// Point rule to determine point for this scoring
     /// </summary>
     [DataMember]
