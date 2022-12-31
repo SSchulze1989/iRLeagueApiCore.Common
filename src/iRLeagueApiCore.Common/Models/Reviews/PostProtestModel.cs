@@ -4,7 +4,7 @@
 public class PostProtestModel
 {
     [DataMember]
-    public string AuthorMemberId { get; set; } = string.Empty;
+    public long AuthorMemberId { get; set; }
     [DataMember]
     public string ConfirmIRacingId { get; set; } = string.Empty;
     [DataMember]
@@ -14,5 +14,5 @@ public class PostProtestModel
     [DataMember]
     public string Corner { get; set; } = string.Empty;
     [DataMember]
-    public ICollection<long> InvolvedMemberIds { get; set; } = new List<long>();
+    public ICollection<MemberInfoModel> InvolvedMemberIds { get; set; } = new List<MemberInfoModel>();
 }

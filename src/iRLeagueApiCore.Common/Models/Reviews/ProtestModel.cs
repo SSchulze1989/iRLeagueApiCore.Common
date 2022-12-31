@@ -4,6 +4,8 @@
 public sealed class ProtestModel : PutProtestModel
 {
     [DataMember]
+    public MemberInfoModel Author { get; set; } = new();
+    [DataMember]
     public long ProtestId { get; set; }
     [DataMember]
     public long EventId { get; set; }
@@ -11,6 +13,4 @@ public sealed class ProtestModel : PutProtestModel
     public long SessionId { get; set; }
     [DataMember]
     public int SessionNr { get; set; }
-    [IgnoreDataMember]
-    public new string ConfirmIRacingId { get; set; } = string.Empty;
 }
