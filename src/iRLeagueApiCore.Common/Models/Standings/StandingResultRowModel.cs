@@ -36,6 +36,7 @@ public sealed class StandingResultRowModel
     /// </summary>
     [DataMember]
     public int Status { get; set; }
+    /// <summary>
     /// Irating before the event
     /// </summary>
     [DataMember]
