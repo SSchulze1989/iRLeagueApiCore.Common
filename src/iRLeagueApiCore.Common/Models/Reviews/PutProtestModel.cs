@@ -10,5 +10,5 @@ public class PutProtestModel
     [DataMember]
     public string Corner { get; set; } = string.Empty;
     [DataMember]
-    public ICollection<MemberInfoModel> InvolvedMemberIds { get; set; } = new List<MemberInfoModel>();
+    public ICollection<MemberInfoModel> InvolvedMembers { get; set; } = new List<MemberInfoModel>();
 }

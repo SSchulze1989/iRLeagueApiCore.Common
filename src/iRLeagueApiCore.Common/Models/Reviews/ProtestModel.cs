@@ -13,4 +13,6 @@ public sealed class ProtestModel : PutProtestModel
     public long SessionId { get; set; }
     [DataMember]
     public int SessionNr { get; set; }
+    [DataMember]
+    public string SessionName { get; set; } = string.Empty;
 }

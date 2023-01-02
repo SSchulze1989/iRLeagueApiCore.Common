@@ -14,5 +14,5 @@ public class PostProtestModel
     [DataMember]
     public string Corner { get; set; } = string.Empty;
     [DataMember]
-    public ICollection<MemberInfoModel> InvolvedMemberIds { get; set; } = new List<MemberInfoModel>();
+    public IList<MemberInfoModel> InvolvedMembers { get; set; } = new List<MemberInfoModel>();
 }
