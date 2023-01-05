@@ -70,6 +70,15 @@ public class ResultModel
     [DataMember(IsRequired = true)]
     public IEnumerable<ResultRowModel> ResultRows { get; set; } = Array.Empty<ResultRowModel>();
 
+    [DataMember]
+    public TimeSpan? FastestLapTime { get; set; }
+    [DataMember]
+    public MemberInfoModel? FastestLapDriver { get; set; }
+    [DataMember]
+    public TimeSpan? PoleLapTime { get; set; }
+    [DataMember]
+    public IEnumerable<MemberInfoModel>? CleanestDrivers { get; set; }
+
     #region version
     /// <summary>
     /// Date of creation
