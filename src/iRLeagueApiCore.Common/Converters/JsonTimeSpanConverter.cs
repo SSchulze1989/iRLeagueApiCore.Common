@@ -26,12 +26,22 @@ namespace iRLeagueApiCore.Common.Converters
                 {
                     return TimeSpan.Zero;
                 }
+                var hasDays = timeSpanString.Count(c => c == '.') > 1;
+                if (hasDays)
+                {
+                    return TimeSpan.ParseExact(timeSpanString, @"dd\.hh\:mm\:ss\.fffff", null);
+                }
                 return TimeSpan.ParseExact(timeSpanString, @"hh\:mm\:ss\.fffff", null);
             }
         }
 
         public override void Write(Utf8JsonWriter writer, TimeSpan value, JsonSerializerOptions options)
         {
+            if (value.Days > 0)
+            {
+                writer.WriteStringValue(value.ToString(@"dd\.hh\:mm\:ss\.fffff"));
+                return;
+            }
             writer.WriteStringValue(value.ToString(@"hh\:mm\:ss\.fffff"));
         }
     }
