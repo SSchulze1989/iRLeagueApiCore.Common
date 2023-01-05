@@ -77,6 +77,8 @@ public class ResultModel
     [DataMember]
     public TimeSpan? PoleLapTime { get; set; }
     [DataMember]
+    public MemberInfoModel? PoleLapDriver { get; set; }
+    [DataMember]
     public IEnumerable<MemberInfoModel>? CleanestDrivers { get; set; }
 
     #region version
