@@ -1,6 +1,5 @@
-﻿namespace iRLeagueApiCore.Common.Models
+﻿namespace iRLeagueApiCore.Common.Models;
+
+public class PostSessionModel : PutSessionModel
 {
-    public class PostSessionModel : PutSessionModel
-    {
-    }
 }

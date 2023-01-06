@@ -1,11 +1,10 @@
-﻿namespace iRLeagueApiCore.Common.Models.Reviews
+﻿namespace iRLeagueApiCore.Common.Models.Reviews;
+
+[DataContract]
+public class PostReviewCommentModel
 {
-    [DataContract]
-    public class PostReviewCommentModel
-    {
-        [DataMember]
-        public string Text { get; set; } = string.Empty;
-        [DataMember]
-        public ICollection<VoteModel> Votes { get; set; } = Array.Empty<VoteModel>();
-    }
+    [DataMember]
+    public string Text { get; set; } = string.Empty;
+    [DataMember]
+    public ICollection<VoteModel> Votes { get; set; } = Array.Empty<VoteModel>();
 }

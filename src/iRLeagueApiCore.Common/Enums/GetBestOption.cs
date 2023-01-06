@@ -1,8 +1,7 @@
-﻿namespace iRLeagueApiCore.Common.Enums
+﻿namespace iRLeagueApiCore.Common.Enums;
+
+public enum GetBestOption
 {
-    public enum GetBestOption
-    {
-        MaxValue,
-        MinValue
-    }
+    MaxValue,
+    MinValue
 }

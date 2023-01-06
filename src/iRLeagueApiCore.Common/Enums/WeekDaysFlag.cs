@@ -20,17 +20,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+[Flags]
+public enum WeekDaysFlag
 {
-    [Flags]
-    public enum WeekDaysFlag
-    {
-        Sunday = 1 << DayOfWeek.Sunday,
-        Monday = 1 << DayOfWeek.Monday,
-        Tuesday = 1 << DayOfWeek.Tuesday,
-        Wednesday = 1 << DayOfWeek.Wednesday,
-        Thursday = 1 << DayOfWeek.Thursday,
-        Friday = 1 << DayOfWeek.Friday,
-        Saturday = 1 << DayOfWeek.Saturday
-    }
+    Sunday = 1 << DayOfWeek.Sunday,
+    Monday = 1 << DayOfWeek.Monday,
+    Tuesday = 1 << DayOfWeek.Tuesday,
+    Wednesday = 1 << DayOfWeek.Wednesday,
+    Thursday = 1 << DayOfWeek.Thursday,
+    Friday = 1 << DayOfWeek.Friday,
+    Saturday = 1 << DayOfWeek.Saturday
 }

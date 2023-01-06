@@ -20,15 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+[Flags]
+public enum TimingComponents
 {
-    [Flags]
-    public enum TimingComponents
-    {
-        Milliseconds = 0b00000001,
-        Seconds = 0b00000010,
-        Minutes = 0b00000100,
-        Hours = 0b00001000,
-        Days = 0b00010000
-    }
+    Milliseconds = 0b00000001,
+    Seconds = 0b00000010,
+    Minutes = 0b00000100,
+    Hours = 0b00001000,
+    Days = 0b00010000
 }

@@ -20,14 +20,13 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+public enum DatabaseStatus
 {
-    public enum DatabaseStatus
-    {
-        Idle = 0,
-        Loading = 1,
-        Saving = 2,
-        Updating = 3,
-        Error = 99
-    }
+    Idle = 0,
+    Loading = 1,
+    Saving = 2,
+    Updating = 3,
+    Error = 99
 }

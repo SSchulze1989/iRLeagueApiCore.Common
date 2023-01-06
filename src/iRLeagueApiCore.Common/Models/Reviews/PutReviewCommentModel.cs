@@ -1,7 +1,6 @@
-﻿namespace iRLeagueApiCore.Common.Models.Reviews
+﻿namespace iRLeagueApiCore.Common.Models.Reviews;
+
+[DataContract]
+public class PutReviewCommentModel : PostReviewCommentModel
 {
-    [DataContract]
-    public class PutReviewCommentModel : PostReviewCommentModel
-    {
-    }
 }

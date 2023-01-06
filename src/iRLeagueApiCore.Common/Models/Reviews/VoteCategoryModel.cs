@@ -1,9 +1,8 @@
-﻿namespace iRLeagueApiCore.Common.Models.Reviews
+﻿namespace iRLeagueApiCore.Common.Models.Reviews;
+
+[DataContract]
+public class VoteCategoryModel : PutVoteCategoryModel
 {
-    [DataContract]
-    public class VoteCategoryModel : PutVoteCategoryModel
-    {
-        [DataMember]
-        public long Id { get; set; }
-    }
+    [DataMember]
+    public long Id { get; set; }
 }

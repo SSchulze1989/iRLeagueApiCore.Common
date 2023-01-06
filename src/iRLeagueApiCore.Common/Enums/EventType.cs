@@ -1,11 +1,10 @@
-﻿namespace iRLeagueApiCore.Common.Enums
+﻿namespace iRLeagueApiCore.Common.Enums;
+
+public enum EventType
 {
-    public enum EventType
-    {
-        Undefined,
-        Practice,
-        Qualifying,
-        SingleRace,
-        MultiRace
-    }
+    Undefined,
+    Practice,
+    Qualifying,
+    SingleRace,
+    MultiRace
 }
