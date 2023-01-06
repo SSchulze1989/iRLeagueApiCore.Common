@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace iRLeagueApiCore.Common.Models;
 
-namespace iRLeagueApiCore.Common.Models
+public class PostScheduleModel : PutScheduleModel
 {
-    public class PostScheduleModel : PutScheduleModel
-    {
-    }
 }

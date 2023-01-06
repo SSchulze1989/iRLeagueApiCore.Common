@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models.Users;
+﻿namespace iRLeagueApiCore.Common.Models.Users;
 
 /// <summary>
 /// Information about user and the current league roles

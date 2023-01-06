@@ -1,11 +1,10 @@
-﻿namespace iRLeagueApiCore.Common.Enums
+﻿namespace iRLeagueApiCore.Common.Enums;
+
+public enum ConfigType
 {
-    public enum ConfigType
-    {
-        Unknown,
-        Road,
-        Oval,
-        DirtRoad,
-        DirtOval
-    }
+    Unknown,
+    Road,
+    Oval,
+    DirtRoad,
+    DirtOval
 }

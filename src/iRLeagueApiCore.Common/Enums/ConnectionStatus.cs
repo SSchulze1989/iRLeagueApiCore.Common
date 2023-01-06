@@ -20,15 +20,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+public enum ConnectionStatus
 {
-    public enum ConnectionStatus
-    {
-        Disconnected = 0,
-        Connected = 1,
-        Connecting = 2,
-        DatabaseUnavailable = 3,
-        NoConnection = 4,
-        ConnectionError = 99
-    }
+    Disconnected = 0,
+    Connected = 1,
+    Connecting = 2,
+    DatabaseUnavailable = 3,
+    NoConnection = 4,
+    ConnectionError = 99
 }

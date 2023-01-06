@@ -20,19 +20,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-using System;
+namespace iRLeagueApiCore.Common.Enums;
 
-namespace iRLeagueApiCore.Common.Enums
+[Flags]
+public enum SaveSelect
 {
-    [Flags]
-    public enum SaveSelect
-    {
-        LeagueMembers = 0b00000001,
-        Admins = 0b00000010,
-        Results = 0b00000100,
-        Scorings = 0b00001000,
-        Schedules = 0b00010000,
-        Seasons = 0b00100000,
-        Teams = 0b01000000
-    }
+    LeagueMembers = 0b00000001,
+    Admins = 0b00000010,
+    Results = 0b00000100,
+    Scorings = 0b00001000,
+    Schedules = 0b00010000,
+    Seasons = 0b00100000,
+    Teams = 0b01000000
 }

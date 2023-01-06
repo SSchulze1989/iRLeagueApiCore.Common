@@ -20,12 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+public enum UpdateKind
 {
-    public enum UpdateKind
-    {
-        Loading,
-        Saving,
-        Updating
-    }
+    Loading,
+    Saving,
+    Updating
 }

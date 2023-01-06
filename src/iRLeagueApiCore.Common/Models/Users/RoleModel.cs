@@ -1,7 +1,6 @@
-﻿namespace iRLeagueApiCore.Common.Models.Users
+﻿namespace iRLeagueApiCore.Common.Models.Users;
+
+public class RoleModel
 {
-    public class RoleModel
-    {
-        public string RoleName { get; set; } = string.Empty;
-    }
+    public string RoleName { get; set; } = string.Empty;
 }
