@@ -20,16 +20,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+/// <summary>
+/// Selected session type
+/// </summary>
+public enum SessionType
 {
-    /// <summary>
-    /// Selected session type
-    /// </summary>
-    public enum SessionType
-    {
-        Undefined,
-        Practice,
-        Qualifying,
-        Race,
-    }
+    Undefined,
+    Practice,
+    Qualifying,
+    Race,
 }

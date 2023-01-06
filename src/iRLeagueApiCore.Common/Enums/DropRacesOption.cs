@@ -20,11 +20,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+public enum DropRacesOption
 {
-    public enum DropRacesOption
-    {
-        PerTeamResults = 0,
-        PerDriverResults = 1
-    }
+    PerTeamResults = 0,
+    PerDriverResults = 1
 }

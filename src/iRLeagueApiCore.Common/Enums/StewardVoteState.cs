@@ -20,16 +20,15 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-namespace iRLeagueApiCore.Common.Enums
+namespace iRLeagueApiCore.Common.Enums;
+
+public enum StewardVoteState
 {
-    public enum StewardVoteState
-    {
-        NoVote,
-        Open,
-        VotesNeeded,
-        Conflict,
-        MajorityVote,
-        Agreed,
-        Closed
-    }
+    NoVote,
+    Open,
+    VotesNeeded,
+    Conflict,
+    MajorityVote,
+    Agreed,
+    Closed
 }

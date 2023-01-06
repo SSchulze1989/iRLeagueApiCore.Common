@@ -1,13 +1,12 @@
-﻿namespace iRLeagueApiCore.Common.Enums
+﻿namespace iRLeagueApiCore.Common.Enums;
+
+public enum ComparatorType
 {
-    public enum ComparatorType
-    {
-        IsSmaller,
-        IsSmallerOrEqual,
-        IsEqual,
-        IsBiggerOrEqual,
-        IsBigger,
-        NotEqual,
-        InList
-    }
+    IsSmaller,
+    IsSmallerOrEqual,
+    IsEqual,
+    IsBiggerOrEqual,
+    IsBigger,
+    NotEqual,
+    InList
 }
