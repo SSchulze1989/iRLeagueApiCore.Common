@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
+﻿using System.Diagnostics.CodeAnalysis;
 using System.Text.RegularExpressions;
 
 namespace iRLeagueApiCore.Common
@@ -35,12 +32,12 @@ namespace iRLeagueApiCore.Common
         /// <summary>
         /// Array of all available league roles
         /// </summary>
-        public static LeagueRoleValue[] RolesAvailable { get; } = new[] 
-        { 
-            AdminValue, 
-            OrganizerValue, 
-            StewardValue, 
-            MemberValue 
+        public static LeagueRoleValue[] RolesAvailable { get; } = new[]
+        {
+            AdminValue,
+            OrganizerValue,
+            StewardValue,
+            MemberValue
         };
 
         /// <summary>
@@ -73,7 +70,7 @@ namespace iRLeagueApiCore.Common
         /// <returns></returns>
         public static bool IsLeagueRoleName(string leagueName, string roleName)
         {
-            var pattern = $"({leagueName})({RoleDelimiter})({string.Join<LeagueRoleValue>('|', RolesAvailable)})";   
+            var pattern = $"({leagueName})({RoleDelimiter})({string.Join<LeagueRoleValue>('|', RolesAvailable)})";
             return Regex.IsMatch(roleName, pattern, RegexOptions.IgnoreCase);
         }
 

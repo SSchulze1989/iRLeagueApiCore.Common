@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace iRLeagueApiCore.Common.Models.Standings
+﻿namespace iRLeagueApiCore.Common.Models.Standings
 {
     public class StandingsModel
     {

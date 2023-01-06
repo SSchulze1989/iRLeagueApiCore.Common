@@ -1,10 +1,4 @@
-﻿using System;
-using System.Runtime.Serialization;
-using iRLeagueApiCore.Common.Enums;
-using System.Collections.Generic;
-#if NETCOREAPP
-using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
+﻿#if NETCOREAPP
 #endif
 
 namespace iRLeagueApiCore.Common.Models
@@ -38,6 +32,6 @@ namespace iRLeagueApiCore.Common.Models
         public int Laps { get; set; }
         [DataMember]
         public TimeSpan Duration { get; set; }
-         
+
     }
 }

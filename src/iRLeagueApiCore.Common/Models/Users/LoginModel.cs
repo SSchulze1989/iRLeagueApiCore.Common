@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace iRLeagueApiCore.Common.Models.Users
+﻿namespace iRLeagueApiCore.Common.Models.Users
 {
     /// <summary>
     /// Model containing user data used for login

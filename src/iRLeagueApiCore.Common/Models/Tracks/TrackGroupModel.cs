@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models.Tracks
+﻿namespace iRLeagueApiCore.Common.Models.Tracks
 {
     [DataContract]
     public class TrackGroupModel

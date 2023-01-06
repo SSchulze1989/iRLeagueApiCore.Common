@@ -1,9 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models
+﻿namespace iRLeagueApiCore.Common.Models
 {
     /// <summary>
     /// Model providing data for search functionalty (e.g.: search user by name(s))

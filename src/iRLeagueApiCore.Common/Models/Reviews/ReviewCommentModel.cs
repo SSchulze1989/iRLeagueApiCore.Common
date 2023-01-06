@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models.Reviews
+﻿namespace iRLeagueApiCore.Common.Models.Reviews
 {
     [DataContract]
     public class ReviewCommentModel : PutReviewCommentModel, IVersionModel

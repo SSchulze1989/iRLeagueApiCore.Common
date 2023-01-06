@@ -1,7 +1,4 @@
-﻿using iRLeagueApiCore.Common.Enums;
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models.Tracks
+﻿namespace iRLeagueApiCore.Common.Models.Tracks
 {
     [DataContract]
     public class TrackConfigModel

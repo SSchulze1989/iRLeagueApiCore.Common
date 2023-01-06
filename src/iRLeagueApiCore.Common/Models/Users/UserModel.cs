@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models.Users
+﻿namespace iRLeagueApiCore.Common.Models.Users
 {
     /// <summary>
     /// User model containing basic user infos that can be viewed by everyone

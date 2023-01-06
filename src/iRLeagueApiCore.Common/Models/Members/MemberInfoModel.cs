@@ -1,7 +1,4 @@
-﻿using System;
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models;
+﻿namespace iRLeagueApiCore.Common.Models;
 
 [DataContract]
 public class MemberInfoModel : IEquatable<MemberInfoModel>

@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models
+﻿namespace iRLeagueApiCore.Common.Models
 {
     /// <summary>
     /// Schema for updating an existing league

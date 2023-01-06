@@ -1,6 +1,4 @@
-﻿using iRLeagueApiCore.Common.Models;
-
-namespace iRLeagueApiCore.Common.Models;
+﻿namespace iRLeagueApiCore.Common.Models;
 
 [DataContract]
 public class PostTeamModel

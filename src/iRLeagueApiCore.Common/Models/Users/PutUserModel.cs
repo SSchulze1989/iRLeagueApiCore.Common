@@ -1,7 +1,4 @@
-﻿
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models.Users
+﻿namespace iRLeagueApiCore.Common.Models.Users
 {
     [DataContract]
     public class PutUserModel

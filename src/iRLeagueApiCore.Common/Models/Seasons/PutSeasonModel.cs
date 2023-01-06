@@ -3,5 +3,5 @@
 [DataContract]
 public class PutSeasonModel : PostSeasonModel
 {
-    
+
 }

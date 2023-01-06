@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
-
-namespace iRLeagueApiCore.Common.Models
+﻿namespace iRLeagueApiCore.Common.Models
 {
     /// <summary>
     /// Get a scored result row from the database

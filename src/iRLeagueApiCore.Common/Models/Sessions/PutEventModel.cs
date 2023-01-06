@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace iRLeagueApiCore.Common.Models
+﻿namespace iRLeagueApiCore.Common.Models
 {
     public class PutEventModel : PostEventModel
     {
