@@ -1,4 +1,4 @@
-﻿namespace iRLeagueApiCore.Common.Models.Championships;
+﻿namespace iRLeagueApiCore.Common.Models;
 
 [DataContract]
 public class PutChampionshipModel : PostChampionshipModel
