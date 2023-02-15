@@ -6,5 +6,5 @@ public class PostChampSeasonModel
     [DataMember]
     public StandingConfigModel? StandingConfig { get; set; }
     [DataMember]
-    public ICollection<ResultConfigInfoModel> ResultConfigs { get; set; } = new List<ResultConfigInfoModel>();
+    public IList<ResultConfigModel> ResultConfigs { get; set; } = new List<ResultConfigModel>();
 }
