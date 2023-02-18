@@ -13,6 +13,4 @@ public sealed class ChampSeasonInfoModel
     public string ChampionshipName { get; set; } = string.Empty;
     [DataMember]
     public string SeasonName { get; set; } = string.Empty;
-    [DataMember]
-    public bool IsActive { get; set; }
 }
