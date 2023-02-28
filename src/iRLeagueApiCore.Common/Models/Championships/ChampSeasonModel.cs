@@ -10,7 +10,5 @@ public sealed class ChampSeasonModel : PutChampSeasonModel
     [DataMember]
     public long SeasonId { get; set; }
     [DataMember]
-    public string ChampionshipName { get; set; } = string.Empty;
-    [DataMember]
     public string SeasonName { get; set; } = string.Empty;
 }
