@@ -24,5 +24,7 @@ public class EventResultModel
     [DataMember]
     public string ConfigName { get; set; } = string.Empty;
     [DataMember]
+    public int StrengthOfField { get; set; }
+    [DataMember]
     public IEnumerable<ResultModel> SessionResults { get; set; } = Array.Empty<ResultModel>();
 }
