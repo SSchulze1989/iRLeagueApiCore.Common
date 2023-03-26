@@ -3,4 +3,5 @@
 public enum FilterType
 {
     ColumnProperty,
+    Member,
 }

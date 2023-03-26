@@ -21,5 +21,5 @@ public sealed class ResultFilterModel
     [DataMember]
     public MatchedValueAction Action { get; set; }
     [DataMember]
-    public ICollection<string> FilterValues { get; set; } = Array.Empty<string>();
+    public ICollection<string> FilterValues { get; set; } = new List<string>();
 }
