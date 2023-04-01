@@ -28,4 +28,6 @@ public class PutLeagueModel
     /// </summary>
     [DataMember]
     public ProtestPublicSetting ProtestsPublic { get; set; }
+    [DataMember]
+    public LeaguePublicSetting LeaguePublic { get; set; }   
 }
