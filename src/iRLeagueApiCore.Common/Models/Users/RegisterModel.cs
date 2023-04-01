@@ -11,6 +11,16 @@ public class RegisterModel
     [Required(ErrorMessage = "User Name is required")]
     public string Username { get; set; } = string.Empty;
     /// <summary>
+    /// Firstname
+    /// </summary>
+    [Required(ErrorMessage = "Firstname is required")]
+    public string Firstname { get; set; } = string.Empty;
+    /// <summary>
+    /// Lastname
+    /// </summary>
+    [Required(ErrorMessage = "Lastname is required")]
+    public string Lastname { get; set; } = string.Empty;
+    /// <summary>
     /// Valid email
     /// </summary>
     [EmailAddress]

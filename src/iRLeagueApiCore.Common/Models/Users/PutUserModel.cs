@@ -9,4 +9,6 @@ public class PutUserModel
     public string Lastname { get; set; } = string.Empty;
     [DataMember]
     public string Email { get; set; } = string.Empty;
+    [DataMember]
+    public bool HideFirstnameLastname { get; set; }
 }
