@@ -11,6 +11,17 @@ public class PutLeagueModel
     /// </summary>
     [DataMember]
     public string NameFull { get; set; } = string.Empty;
+    /// <summary>
+    /// Longtext description of the league. Will be displayed on the league welcome page in iRLeagueManager.Web application.
+    /// Supports markdown
+    /// </summary>
+    [DataMember]
+    public string Description { get; set; } = string.Empty;
+    /// <summary>
+    /// Plain text version of league description
+    /// </summary>
+    [DataMember]
+    public string DescriptionPlain { get; set; } = string.Empty;
     [DataMember]
     public bool EnableProtests { get; set; }
     /// <summary>
