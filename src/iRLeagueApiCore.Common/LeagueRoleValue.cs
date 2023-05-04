@@ -14,7 +14,9 @@ public class LeagueRoleValue : IEquatable<LeagueRoleValue>, IEquatable<string>
     internal LeagueRoleValue(string value, IEnumerable<LeagueRoleValue> implicitRoles)
     {
         this.value = value;
-        this.implicitRoles = implicitRoles.ToArray();
+        this.implicitRoles = implicitRoles
+            .SelectMany(x => new[] { x }.Concat(x.GetImplicitRoles()))
+            .ToArray();
     }
 
     public static implicit operator string(LeagueRoleValue role) => role.value;

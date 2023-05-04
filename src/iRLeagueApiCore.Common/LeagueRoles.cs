@@ -27,13 +27,20 @@ public static class LeagueRoles
     /// Administrator of the league with full privileges
     /// </summary>
     public const string Admin = "Admin";
-    public static LeagueRoleValue AdminValue { get; } = new(Admin, new[] { OrganizerValue, StewardValue, MemberValue });
+    public static LeagueRoleValue AdminValue { get; } = new(Admin, new[] { OrganizerValue, StewardValue });
+    /// <summary>
+    /// Owner of the league
+    /// Full privilige including right to delete
+    /// </summary>
+    public const string Owner = "Owner";
+    public static LeagueRoleValue OwnerValue { get; } = new(Owner, new[] { AdminValue });
 
     /// <summary>
     /// Array of all available league roles
     /// </summary>
     public static LeagueRoleValue[] RolesAvailable { get; } = new[]
     {
+        OwnerValue,
         AdminValue,
         OrganizerValue,
         StewardValue,

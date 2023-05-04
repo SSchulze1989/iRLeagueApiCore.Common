@@ -3,11 +3,13 @@ namespace iRLeagueApiCore.Common.Tests;
 public class LeagueRolesTests
 {
     [Theory]
-    [InlineData("Admin", true, true, true, true)]
-    [InlineData("Organizer", false, true, false, true)]
-    [InlineData("Steward", false, false, true, true)]
-    [InlineData("Member", false, false, false, true)]
+    [InlineData(LeagueRoles.Owner, true, true, true, true, true)]
+    [InlineData(LeagueRoles.Admin, false, true, true, true, true)]
+    [InlineData(LeagueRoles.Organizer, false, false, true, false, true)]
+    [InlineData(LeagueRoles.Steward, false, false, false, true, true)]
+    [InlineData(LeagueRoles.Member, false, false, false, false, true)]
     public void ShouldHaveRoles(string roleName,
+        bool owner,
         bool admin,
         bool organizer,
         bool steward,
@@ -17,6 +19,7 @@ public class LeagueRolesTests
         var role = LeagueRoles.GetRoleValue(roleName);
         var roles = new[] { role };
 
+        LeagueRoles.CheckRole(LeagueRoles.OwnerValue, roles).Should().Be(owner);
         LeagueRoles.CheckRole(LeagueRoles.AdminValue, roles).Should().Be(admin);
         LeagueRoles.CheckRole(LeagueRoles.OrganizerValue, roles).Should().Be(organizer);
         LeagueRoles.CheckRole(LeagueRoles.StewardValue, roles).Should().Be(steward);
@@ -24,10 +27,11 @@ public class LeagueRolesTests
     }
 
     [Theory]
-    [InlineData("Admin", new string[0])]
-    [InlineData("Organizer", new[] { "Admin" })]
-    [InlineData("Steward", new[] { "Admin" })]
-    [InlineData("Member", new[] { "Admin", "Organizer", "Steward" })]
+    [InlineData(LeagueRoles.Owner, new string[0])]
+    [InlineData(LeagueRoles.Admin, new[] { LeagueRoles.Owner })]
+    [InlineData(LeagueRoles.Organizer, new[] { LeagueRoles.Owner, LeagueRoles.Admin })]
+    [InlineData(LeagueRoles.Steward, new[] { LeagueRoles.Owner, LeagueRoles.Admin })]
+    [InlineData(LeagueRoles.Member, new[] { LeagueRoles.Owner, LeagueRoles.Admin, LeagueRoles.Organizer, LeagueRoles.Steward })]
     public void ShouldBeImplicitOf(string roleName, string[] implicitOfRoleNames)
     {
         // Setup
