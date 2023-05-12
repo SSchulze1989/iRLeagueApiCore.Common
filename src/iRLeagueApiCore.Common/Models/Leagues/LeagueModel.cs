@@ -11,6 +11,8 @@ public class LeagueModel : PostLeagueModel, IVersionModel
     /// </summary>
     [DataMember]
     public long Id { get; set; }
+    [DataMember]
+    public bool IsInitialized { get; set; }
     /// <summary>
     /// Ids of seasons in this league
     /// </summary>
