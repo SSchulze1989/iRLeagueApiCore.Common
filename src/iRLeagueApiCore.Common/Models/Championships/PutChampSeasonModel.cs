@@ -11,4 +11,6 @@ public class PutChampSeasonModel : PostChampSeasonModel
     public StandingConfigModel? StandingConfig { get; set; }
     [DataMember]
     public ICollection<ResultConfigInfoModel> ResultConfigs { get; set; } = new List<ResultConfigInfoModel>();
+    [DataMember]
+    public ResultConfigInfoModel? DefaultResultConfig { get; set; }
 }

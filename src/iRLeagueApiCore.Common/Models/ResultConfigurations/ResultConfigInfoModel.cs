@@ -15,4 +15,6 @@ public class ResultConfigInfoModel
     public string Name { get; set; } = string.Empty;
     [DataMember]
     public string DisplayName { get; set; } = string.Empty;
+    [DataMember]
+    public bool IsDefaultConfig { get; set; }
 }

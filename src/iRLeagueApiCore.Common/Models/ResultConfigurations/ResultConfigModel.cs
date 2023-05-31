@@ -11,4 +11,6 @@ public class ResultConfigModel : PutResultConfigModel
     public long ChampSeasonId { get; set; }
     [DataMember]
     public string ChampionshipName { get; set; } = string.Empty;
+    [DataMember]
+    public bool IsDefaultConfig { get; set; }
 }
