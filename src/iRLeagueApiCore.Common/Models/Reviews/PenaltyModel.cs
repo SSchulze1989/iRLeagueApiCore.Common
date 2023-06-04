@@ -12,6 +12,12 @@ public sealed class PenaltyModel
     [DataMember(EmitDefaultValue = false)]
     public long? ReviewVoteId { get; set; }
     [DataMember]
+    public long MemberId { get; set; }
+    [DataMember]
+    public string Firstname { get; set; } = string.Empty;
+    [DataMember]
+    public string Lastname { get; set; } = string.Empty;
+    [DataMember]
     public PenaltyType Type { get; set; }
     [DataMember(EmitDefaultValue = false)]
     public int Points { get; set; }
