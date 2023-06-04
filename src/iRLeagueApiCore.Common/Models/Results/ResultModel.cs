@@ -15,6 +15,11 @@ public class ResultModel
     /// </summary>
     public long SeasonId { get; set; }
     /// <summary>
+    /// Id of the unique session result
+    /// </summary>
+    [DataMember]
+    public long SessionResultId { get; set; }
+    /// <summary>
     /// Name of the season the result belongs to
     /// </summary>
     [DataMember]
