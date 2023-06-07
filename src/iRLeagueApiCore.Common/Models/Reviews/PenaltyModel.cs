@@ -14,7 +14,7 @@ public sealed class PenaltyModel : PutPenaltyModel
     [DataMember]
     public long EventId { get; set; }
     [DataMember]
-    public long? SessionId { get; set; }
+    public int SessionNr { get; set; }
     [DataMember]
     public string SessionName { get; set; } = string.Empty;
     [DataMember]
