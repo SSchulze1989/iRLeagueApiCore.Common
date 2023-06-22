@@ -1,8 +1,9 @@
 ﻿namespace iRLeagueApiCore.Common.Enums;
 public enum SubscriptionStatus
 {
-    Unknown,
+    Expired = -1,
+    Unknown = 0,
     FreeTrial,
     PaidPlan,
-    Expired,
+    Lifetime,
 }
