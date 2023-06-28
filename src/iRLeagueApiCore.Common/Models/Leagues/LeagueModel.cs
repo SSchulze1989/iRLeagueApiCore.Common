@@ -18,6 +18,10 @@ public class LeagueModel : PostLeagueModel, IVersionModel
     /// </summary>
     [DataMember]
     public IEnumerable<long> SeasonIds { get; set; } = Array.Empty<long>();
+    [DataMember(EmitDefaultValue = false)]
+    public SubscriptionStatus? SubscriptionStatus { get; set; }
+    [DataMember(EmitDefaultValue = false)]
+    public DateTime? SubscriptionExpires { get; set; }
 
     #region version
     /// <summary>
