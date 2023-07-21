@@ -18,5 +18,5 @@ public sealed class AutoPenaltyConfiguration
     [DataMember(EmitDefaultValue = false)]
     public int Positions { get; set; }
     [DataMember]
-    public ICollection<ResultFilterModel> Conditions { get; set; } = new List<ResultFilterModel>();
+    public ICollection<FilterConditionModel> Conditions { get; set; } = new List<FilterConditionModel>();
 }

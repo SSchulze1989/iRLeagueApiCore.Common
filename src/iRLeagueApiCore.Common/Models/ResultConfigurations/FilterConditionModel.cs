@@ -1,4 +1,4 @@
-﻿namespace iRLeagueApiCore.Common.Models.ResultConfigurations;
+﻿namespace iRLeagueApiCore.Common.Models;
 
 [DataContract]
 public sealed class FilterConditionModel
