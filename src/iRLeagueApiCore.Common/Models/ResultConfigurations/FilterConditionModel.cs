@@ -11,4 +11,6 @@ public sealed class FilterConditionModel
     public ComparatorType Comparator { get; set; }
     [DataMember]
     public ICollection<string> FilterValues { get; set; } = new List<string>();
+    [DataMember]
+    public MatchedValueAction Action { get; set; }
 }
