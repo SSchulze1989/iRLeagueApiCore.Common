@@ -14,4 +14,9 @@ public class PostPointRuleModel
     public int PointDropOff { get; set; }
     public ICollection<SortOptions> PointsSortOptions { get; set; } = new List<SortOptions>();
     public ICollection<SortOptions> FinalSortOptions { get; set; } = new List<SortOptions>();
+    /// <summary>
+    /// List of configurations for automated penalties
+    /// </summary>
+    [DataMember]
+    public ICollection<AutoPenaltyConfiguration> AutoPenalties { get; set; } = new List<AutoPenaltyConfiguration>();
 }
