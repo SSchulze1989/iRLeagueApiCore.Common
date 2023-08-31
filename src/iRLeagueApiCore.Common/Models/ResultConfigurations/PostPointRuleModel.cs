@@ -8,7 +8,7 @@ public class PostPointRuleModel
     [DataMember]
     public IList<int> PointsPerPlace { get; set; } = new List<int>();
     [DataMember]
-    public IDictionary<string, int> BonusPoints { get; set; } = new Dictionary<string, int>();
+    public ICollection<BonusPointModel> BonusPoints { get; set; } = new List<BonusPointModel>();
     [DataMember]
     public int MaxPoints { get; set; }
     public int PointDropOff { get; set; }
