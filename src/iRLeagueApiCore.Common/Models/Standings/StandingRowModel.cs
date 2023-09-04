@@ -42,6 +42,10 @@ public class StandingRowModel
     [DataMember]
     public int RacesCounted { get; set; }
     [DataMember]
+    public int RacesScores { get; set; }
+    [DataMember]
+    public int RacesInPoints { get; set; }
+    [DataMember]
     public int DroppedResultCount { get; set; }
     [DataMember]
     public int ClubId { get; set; }
