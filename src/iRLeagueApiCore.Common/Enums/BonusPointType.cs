@@ -10,4 +10,5 @@ public enum BonusPointType
     MostPositionsLost,
     LeadOneLap,
     LeadMostLaps,
+    Custom = 999,
 }
