@@ -42,7 +42,7 @@ public class StandingRowModel
     [DataMember]
     public int RacesCounted { get; set; }
     [DataMember]
-    public int RacesScores { get; set; }
+    public int RacesScored { get; set; }
     [DataMember]
     public int RacesInPoints { get; set; }
     [DataMember]
