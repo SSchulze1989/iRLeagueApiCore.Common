@@ -8,8 +8,6 @@ public class PostResultConfigModel
     [DataMember]
     public string DisplayName { get; set; } = string.Empty;
     [DataMember]
-    public ResultKind ResultKind { get; set; }
-    [DataMember]
     public ResultConfigInfoModel? SourceResultConfig { get; set; }
     [DataMember]
     public int ResultsPerTeam { get; set; }

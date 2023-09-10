@@ -14,5 +14,7 @@ public class PutChampSeasonModel : PostChampSeasonModel
     [DataMember]
     public ResultConfigInfoModel? DefaultResultConfig { get; set; }
     [DataMember]
+    public ResultKind ResultKind { get; set; }
+    [DataMember]
     public ICollection<ResultFilterModel> Filters { get; set; } = new List<ResultFilterModel>();
 }
