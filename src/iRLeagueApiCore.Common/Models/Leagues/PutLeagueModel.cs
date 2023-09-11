@@ -39,6 +39,16 @@ public class PutLeagueModel
     /// </summary>
     [DataMember]
     public ProtestPublicSetting ProtestsPublic { get; set; }
+    /// <summary>
+    /// Set who can access the protest form and file protests
+    /// </summary>
     [DataMember]
-    public LeaguePublicSetting LeaguePublic { get; set; }   
+    public ProtestFormAccess ProtestFormAccess { get; set; }
+    [DataMember]
+    public LeaguePublicSetting LeaguePublic { get; set; }
+    /// <summary>
+    /// Enable access to protest form and reviews while race is running and before results have been uploaded
+    /// </summary>
+    [DataMember]
+    public bool EnableLiveReviews { get; set; }
 }
