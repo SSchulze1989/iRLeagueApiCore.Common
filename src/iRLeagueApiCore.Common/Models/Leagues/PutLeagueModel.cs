@@ -39,6 +39,11 @@ public class PutLeagueModel
     /// </summary>
     [DataMember]
     public ProtestPublicSetting ProtestsPublic { get; set; }
+    /// <summary>
+    /// Set who can access the protest form and file protests
+    /// </summary>
+    [DataMember]
+    public ProtestFormAccess ProtestFormAccess { get; set; }
     [DataMember]
     public LeaguePublicSetting LeaguePublic { get; set; }   
 }
