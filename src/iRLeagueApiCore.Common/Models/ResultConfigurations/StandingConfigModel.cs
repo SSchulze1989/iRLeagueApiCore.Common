@@ -13,4 +13,6 @@ public sealed class StandingConfigModel
     public bool UseCombinedResult { get; set; }
     [DataMember]
     public int WeeksCounted { get; set; }
+    [DataMember]
+    public ICollection<SortOptions> SortOptions { get; set; } = new List<SortOptions>();
 }
