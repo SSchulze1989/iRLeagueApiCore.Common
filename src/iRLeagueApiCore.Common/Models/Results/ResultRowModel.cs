@@ -6,6 +6,8 @@
 [DataContract]
 public class ResultRowModel
 {
+    [DataMember]
+    public long ScoredResultRowId { get; set; }
     /// <summary>
     /// First name of the driver
     /// </summary>
