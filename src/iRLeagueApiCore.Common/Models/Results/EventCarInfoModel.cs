@@ -17,7 +17,7 @@ public sealed class EventCarInfoModel
     [DataMember]
     public string Class { get; set; } = string.Empty;
     [DataMember]
-    public MemberInfoModel? Member { get; set; }
+    public IEnumerable<MemberInfoModel> Members { get; set; } = Array.Empty<MemberInfoModel>();
     [DataMember]
     public TeamInfoModel? Team { get; set; }
 }
