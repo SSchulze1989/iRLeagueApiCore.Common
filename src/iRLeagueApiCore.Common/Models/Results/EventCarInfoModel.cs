@@ -7,7 +7,7 @@
 public sealed class EventCarInfoModel
 {
     [DataMember]
-    public int Number { get; set; }
+    public string Number { get; set; } = string.Empty;
     [DataMember] 
     public string Car { get; set; } = string.Empty;
     [DataMember]

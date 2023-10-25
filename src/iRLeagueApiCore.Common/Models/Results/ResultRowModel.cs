@@ -47,7 +47,7 @@ public class ResultRowModel
     /// Car number in the session
     /// </summary>
     [DataMember]
-    public string CarNumber { get; set; }
+    public string CarNumber { get; set; } = string.Empty;
     /// <summary>
     /// Class id in the session (in multiclass sessions)
     /// </summary>
