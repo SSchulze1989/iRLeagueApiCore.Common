@@ -13,4 +13,6 @@ public class VoteModel
     public string Description { get; set; } = string.Empty;
     [DataMember]
     public MemberInfoModel? MemberAtFault { get; set; }
+    [DataMember]
+    public TeamInfoModel? TeamAtFault { get; set; }
 }

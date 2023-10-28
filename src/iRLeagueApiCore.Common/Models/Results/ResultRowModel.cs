@@ -6,6 +6,8 @@
 [DataContract]
 public class ResultRowModel
 {
+    [DataMember]
+    public long ScoredResultRowId { get; set; }
     /// <summary>
     /// First name of the driver
     /// </summary>
@@ -45,7 +47,7 @@ public class ResultRowModel
     /// Car number in the session
     /// </summary>
     [DataMember]
-    public int CarNumber { get; set; }
+    public string CarNumber { get; set; } = string.Empty;
     /// <summary>
     /// Class id in the session (in multiclass sessions)
     /// </summary>

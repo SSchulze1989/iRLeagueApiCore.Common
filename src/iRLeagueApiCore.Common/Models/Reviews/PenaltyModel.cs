@@ -18,9 +18,7 @@ public sealed class PenaltyModel : PutPenaltyModel
     [DataMember]
     public string SessionName { get; set; } = string.Empty;
     [DataMember]
-    public long MemberId { get; set; }
+    public MemberInfoModel? Member { get; set; }
     [DataMember]
-    public string Firstname { get; set; } = string.Empty;
-    [DataMember]
-    public string Lastname { get; set; } = string.Empty;
+    public TeamInfoModel? Team { get; set; }
 }
