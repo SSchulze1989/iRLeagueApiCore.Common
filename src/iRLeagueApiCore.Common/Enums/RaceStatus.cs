@@ -25,7 +25,7 @@ namespace iRLeagueApiCore.Common.Enums;
 public enum RaceStatus
 {
     Running,
-    Disconnected,
-    Disqualified,
+    Disconnected = 32,
+    Disqualified = 29,
     Unknown
 }
