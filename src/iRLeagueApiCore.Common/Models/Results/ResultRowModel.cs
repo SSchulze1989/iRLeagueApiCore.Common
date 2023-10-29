@@ -97,7 +97,7 @@ public class ResultRowModel
     /// Driver status at the end of the race (checkered flag)
     /// </summary>
     [DataMember]
-    public int Status { get; set; }
+    public RaceStatus Status { get; set; }
     /// <summary>
     /// Time set in qualifying (only available with attached qualy)
     /// </summary>

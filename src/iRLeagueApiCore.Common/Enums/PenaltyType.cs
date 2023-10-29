@@ -4,4 +4,5 @@ public enum PenaltyType
     Points,
     Position,
     Time,
+    Disqualification,
 }
