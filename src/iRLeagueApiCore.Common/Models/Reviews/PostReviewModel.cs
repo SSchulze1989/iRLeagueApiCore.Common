@@ -18,6 +18,8 @@ public class PostReviewModel
     [DataMember]
     public ICollection<MemberInfoModel> InvolvedMembers { get; set; } = new List<MemberInfoModel>();
     [DataMember]
+    public ICollection<TeamInfoModel> InvolvedTeams { get; set; } = new List<TeamInfoModel>();
+    [DataMember]
     public string ResultText { get; set; } = string.Empty;
     [DataMember]
     public ICollection<VoteModel> VoteResults { get; set; } = new List<VoteModel>();
