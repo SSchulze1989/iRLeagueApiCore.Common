@@ -17,4 +17,6 @@ public class PostResultConfigModel
     public ICollection<ResultFilterModel> FiltersForPoints { get; set; } = new List<ResultFilterModel>();
     [DataMember]
     public ICollection<ResultFilterModel> FiltersForResult { get; set; } = new List<ResultFilterModel>();
+    [DataMember]
+    public IntervalCalculationType IntervalCalculation { get; set; }
 }
