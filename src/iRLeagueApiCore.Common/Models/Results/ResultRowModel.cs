@@ -1,4 +1,6 @@
-﻿namespace iRLeagueApiCore.Common.Models;
+﻿using iRLeagueApiCore.Common.Models.Results;
+
+namespace iRLeagueApiCore.Common.Models;
 
 /// <summary>
 /// Get a scored result row from the database
@@ -215,6 +217,8 @@ public class ResultRowModel
     /// </summary>
     [DataMember]
     public double FinalPositionChange { get; set; }
+    [DataMember]
+    public IEnumerable<AddBonusModel> AddBonuses { get; set; } = Array.Empty<AddBonusModel>();
     [DataMember]
     public IEnumerable<ResultRowModel> TeamResultRows { get; set; } = Array.Empty<ResultRowModel>();
 }
